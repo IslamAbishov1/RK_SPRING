@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Результаты поиска</title>
+</head>
+<body>
+<h1>Результаты поиска</h1>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Email</th>
+        <th>Photo</th>
+    </tr>
+    <tr th:each="u:${users}">
+        <td th:text="${u.id}"></td>
+        <td th:text="${u.title}"></td>
+        <td th:text="${u.email}"></td>
+        <td><img th:src="${u.photoLink}" alt="photo" width="100"/></td>
+    </tr>
+</table>
+<a href="/">Назад к поиску</a>
+</body>
+</html>
