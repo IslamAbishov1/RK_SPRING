@@ -24,4 +24,5 @@ public class IslamProjectRkApplication implements CommandLineRunner {
             userService.createUser("Title Three", "user3@example.com", "src/main/resources/static/images/riodejaneiro.jpg");
         }
     }
+
 }
